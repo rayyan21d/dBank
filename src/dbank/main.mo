@@ -1,5 +1,8 @@
-actor {
-  public func greet(name : Text) : async Text {
-    return "Hello, " # name # "!";
-  };
-};
+import Debug "mo:base/Debug";
+
+
+actor Dbank{
+  var currentValue = 500;
+
+  currentValue := 400;
+}
