@@ -1,8 +1,8 @@
 import Debug "mo:base/Debug";
 
+actor DBank {
+  var currentValue = 300;
 
-actor Dbank{
-  var currentValue = 500;
-
-  currentValue := 400;
+  Debug.print("Hello World!");
+  Debug.print(debug_show(currentValue));
 }
