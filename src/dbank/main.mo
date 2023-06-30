@@ -11,11 +11,20 @@ actor DBank {
   Debug.print(debug_show(id));
 
   //Private function by default!
-  public func topUp(){
-    currentValue +=1;
+  public func topUp(amount:Nat){
+    currentValue +=amount;
     Debug.print(debug_show(currentValue));
   };
 
+  public func withdraw(amount:Nat){
+    currentValue -=amount;
+    Debug.print(debug_show(currentValue));
+  };
+  
   //topUp();
 
 }
+
+// What is Orthogonal Persistence?
+// What is the difference between Orthogonal Persistence and Object Persistence?
+/* Orthogonal persistence is */
